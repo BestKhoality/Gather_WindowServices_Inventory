@@ -1,1 +1,2 @@
 # Gather_WindowServices_Inventory
+This script was designed to inventory the running services in your infrastructure. It requires a c:\temp\servers.txt file to be created and populated with server names; it will then query the wmi-object class ‘win32_services’ to get the necessary info and export it to a csv file in c:\temp. Be cautious as you enter the server names into the servers.txt file as the script currently does not handle actually pinging the servers and will attempt to query servers even if they are offline which will result in a lot of errors.
